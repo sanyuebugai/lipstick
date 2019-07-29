@@ -1,0 +1,71 @@
+.wrapper{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#gamebox{
+  position: relative;
+  width: 2.78rem;
+  height: 2.78rem;
+  margin: 2rem auto 3.5rem;
+  animation: rotate 5s linear infinite;
+  -webkit-animation: rotate 5s linear infinite; /* Safari 和 Chrome */
+}
+@keyframes rotate
+{
+  from {
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg);   /* IE 9 */
+    -moz-transform:rotate(0deg);  /* Firefox */
+    -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+    -o-transform:rotate(0deg);  /* Opera */
+  }
+  to {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);   /* IE 9 */
+    -moz-transform:rotate(360deg);  /* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg);  /* Opera */
+  }
+}
+#round{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 2.78rem;
+  height: 2.78rem;
+  background-image: url('../i/round.png');
+  background-size: 100% 100%;
+}
+
+#gamebox p{
+  position: absolute;
+  width: 0.4rem;
+  height: 2.78rem;
+  top: 0;
+  left: 50%;
+  margin-left: -0.2rem;
+}
+
+#gamebox p img{
+  position: absolute;
+  left: 0;
+  bottom: -1.1rem;
+  width: 0.4rem;
+  height: 1.32rem;
+}
+
+.toy{
+  display: inline-block;
+  width: 0.4rem;
+  height: 1.32rem;
+  margin: 0 auto;
+  background-image: url('../i/item.png');
+  background-size: 100% 100%;
+  transition: all 0.2s cubic-bezier(0.58, -0.12, 0.38, 1.32);
+}
+.curToy{
+  position: absolute;
+  right: 50%;
+}
